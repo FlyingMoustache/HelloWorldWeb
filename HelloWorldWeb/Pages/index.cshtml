@@ -1,0 +1,26 @@
+﻿@page
+@functions {
+  public string DayName { get; set; }
+
+  public void OnGet()
+  {
+     ViewData["Title"] = "HelloWorld WebPage";
+     Model.DayName = DateTime.Now.ToString("dddd");
+  }
+}
+<div class="jumbotron">
+    <h1 class="display-3">Hello World!</h1>
+    <p class="lead">
+        Welcome to my first Webpage.  Site in progress</p>
+    <hr />
+    <p>
+        It's @Model.DayName! Yuppi!
+
+    </p>
+    <p>
+        <a class="btn btn-primary" href="AboutMe">
+            Learn more about Me
+        </a>
+    </p>
+
+</div>

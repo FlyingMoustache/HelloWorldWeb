@@ -1,0 +1,88 @@
+﻿@page
+@functions {
+public string Uni = "Nicolaus Copernicus University";
+public void OnGet()
+{
+    ViewData["Title"] = "HelloWorld WebPage";
+
+}
+}
+<style>
+    /* Create two unequal columns that floats next to each other */
+        .col {
+            float: right;
+        }
+        .left{
+         width: 25%;
+         height:inherit;
+        }   
+
+        .right{
+         width: 75%;
+        }
+        #Face{
+            position:center;
+           
+        }
+    </style>
+<div class="jumbotron" style="background-color: #7a9ba4;">
+    <div class="row">
+        <div id="right" class="col right">
+            <h1 class="display-2">Karol Kowalski</h1>
+
+
+            <table class="table" border-color="inherit">
+                <thead class="thead-inverse" style="border-color: #ff0000;">
+                    <tr><th>Experience</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>06-09.2017 - SPE Global Solutions, position: intern.</strong></td></tr>
+                    <tr><td><strong>07.2015 - Zakład energoelektroniki Twerd, position: intern.</strong></td></tr>
+                </tbody>
+            </table>
+            <table class="table" border-color="inherit">
+                <thead class="thead-inverse" style="border-color: #ff0000;">
+                    <tr><th>Education</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><strong>2017 -  Present, @Uni </strong></p>
+                            <p><strong>PhD in Automatics</strong> </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> <strong>2016 - 2017,  @Uni </strong></p>
+                            <p> <strong>Master degree in Technical Physics </strong></p>
+                            <p> Specialisation: Digital systems in automation </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>2012 - 2016,  @Uni </strong>T</p>
+                            <p style="font = 15px;"><strong>Engineering degree in Automatics and Robotics</strong></p>
+                            <p style="font = 25px;">Specialisation: Machinery and technological equipment. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table" border-color="inherit">
+                <thead class="thead-inverse" style="border-color: #ff0000;">
+                    <tr><th>Hobbies</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>CNC machines, board games, KungFu, bikes, sumo robots</strong></td></tr>
+
+                </tbody>
+            </table>
+            <p>
+                <a class="btn btn-primary" href="##" onClick="history.go(-1); return false;">Go back</a>
+            </p>
+
+        </div>
+      
+    </div>
+</div>
+
